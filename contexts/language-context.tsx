@@ -1,0 +1,177 @@
+"use client"
+
+import type React from "react"
+import {createContext, useContext, useState, useEffect} from "react"
+
+type Language = "en" | "pt"
+
+type LanguageContextType = {
+    language: Language;
+    setLanguage: (language: Language) => void;
+    t: (key: TranslationKeys) => string;
+};
+
+type TranslationKeys = keyof typeof translations["en"];
+
+const LanguageContext = createContext<LanguageContextType | undefined>(undefined)
+
+export function LanguageProvider({children}: { children: React.ReactNode }) {
+    const [language, setLanguage] = useState<Language>("en")
+
+    useEffect(() => {
+        const savedLanguage = localStorage.getItem("language") as Language
+        if (savedLanguage && (savedLanguage === "en" || savedLanguage === "pt")) {
+            setLanguage(savedLanguage)
+        }
+    }, [])
+
+    useEffect(() => {
+        localStorage.setItem("language", language)
+    }, [language])
+
+    const t = (key: TranslationKeys) => {
+        return translations[language][key] || key;
+    };
+
+    return <LanguageContext.Provider value={{language, setLanguage, t}}>{children}</LanguageContext.Provider>
+}
+
+export function useLanguage() {
+    const context = useContext(LanguageContext)
+    if (context === undefined) {
+        throw new Error("useLanguage must be used within a LanguageProvider")
+    }
+    return context
+}
+
+const translations = {
+    en: {
+        // Header
+        role: "Software Developer",
+        intro: "I build robust, scalable back-end systems with C# and .NET that power modern web applications.",
+
+        // About
+        about: "About",
+        about_p1:
+            "Software Developer with 2 years of experience, specialized in back-end development with C#. I have proven skills in working with cross-functional teams to define project requirements and deliverables, always focused on ensuring code quality and on-time delivery of projects.",
+        about_p2:
+            "I am an adept of development best practices and have experience in continuous integration and continuous delivery (CI/CD), which allows me to develop robust and efficient solutions. Currently focused on improving my .NET skills, constantly seeking to expand my knowledge in technologies.",
+
+        // Skills
+        skills: "Technical Skills",
+        languages: "Languages & Frameworks",
+        frameworks: "Tools & Technologies",
+
+        // Projects
+        projects: "Projects",
+        featured: "Featured",
+        all_projects: "All Projects",
+        project1_title: "Authentication Microservice",
+        project1_desc:
+            "A robust and secure authentication microservice built with .NET 8 ASP.NET Core, implementing JWT with RS256 signature. Features a permissions system with roles and groups, ensuring security and consistency in access authorizations. Follows Onion Architecture for clear separation of responsibilities.",
+        project2_title: "Translation SDK",
+        project2_desc:
+            "A lightweight and powerful localization library for .NET 8 applications. Simplifies multilingual support with automatic language detection, JSON-based translations, variable substitution, and fallback mechanisms. Designed for developers who need efficient, easy-to-implement internationalization in their applications.",
+        project3_title: "Discord Bot",
+        project3_desc: "A multifunctional Discord bot designed to offer moderation, entertainment, utility tools, and customizable settings. Developed in Python, it provided a comprehensive set of features for Discord communities. The project has been discontinued and is no longer actively maintained, but its source code remains available for reference and learning purposes.",
+        project4_title: "Auto Clicker",
+        project4_desc: "A lightweight and customizable tool for click automation. Developed in .NET 8 using Windows Forms, it features an intuitive interface, adjustable CPS (clicks per second), configurable jitter for human-like randomness, and a dynamic hotkey system. Designed for ease of use, it includes background execution and anti-detection logic with random pauses. The source code is available for those interested in learning or extending its functionality.",
+        project5_title: ".NET Utility SDK",
+        project5_desc: "A development kit designed to streamline communication between applications and essential services, including authentication, Cloudflare R2 storage, email sending, custom exception handling, and secret management in Azure Vault. Built with a modular architecture, this SDK provides a seamless and secure way to integrate multiple functionalities into .NET applications.",
+
+        // Experience
+        experience: "Experience",
+        job1_title: "Junior Developer",
+        job1_company: "Nuria • Sep 2023 - Present",
+        job1_desc:
+            'Implemented new features in products and APIs for the healthcare ecosystem, enhancing functionality and user experience. Key contributor to the development of "Nuria Appointment", an online scheduling system for medical consultations and procedures. Implemented observability metrics with Grafana for real-time monitoring and optimized caching systems to improve performance. Collaborated with cross-functional teams to design and deploy innovative solutions for real-world healthcare challenges.',
+        job2_title: "Development Intern",
+        job2_company: "Nuria • Feb 2023 - Sep 2023",
+        job2_desc:
+            "Developed and maintained APIs for healthcare supply systems, facilitating integration between hospital ERPs and one of the largest hospital supply providers in the market. Participated in debugging and improving existing systems, ensuring API functionality and accuracy. Contributed to the automation of supply processes, resulting in greater efficiency and reduced operational errors.",
+
+        // Contact
+        contact: "Get In Touch",
+        contact_text:
+            "I'm currently focused on expanding my knowledge in .NET technologies. Feel free to reach out if you'd like to discuss potential opportunities or collaborations.",
+        contact_btn: "Contact Me",
+
+        // Footer
+        rights: "All rights reserved.",
+        built_with: "Built with Next.js and Tailwind CSS",
+
+        // Language
+        switch_to: "Mudar para Português",
+
+        // GitHub
+        view_on_github: "View on GitHub",
+
+        // Technologies used
+        technologies_used: "Technologies used",
+    },
+    pt: {
+        // Header
+        role: "Desenvolvedor de Software",
+        intro: "Desenvolvo sistemas back-end robustos e escaláveis com C# e .NET que impulsionam aplicações web modernas.",
+
+        // About
+        about: "Sobre",
+        about_p1:
+            "Desenvolvedor de Software com 2 anos de experiência, especializado em desenvolvimento back-end com C#. Possuo habilidades comprovadas em trabalhar com equipes multifuncionais para definir requisitos e entregas de projetos, sempre focado em garantir a qualidade do código e a entrega pontual dos projetos.",
+        about_p2:
+            "Sou adepto das melhores práticas de desenvolvimento e tenho experiência em integração e entrega contínuas (CI/CD), o que me permite desenvolver soluções robustas e eficientes. Atualmente focado em aprimorar minhas habilidades em .NET, buscando constantemente expandir meu conhecimento em tecnologias.",
+
+        // Skills
+        skills: "Habilidades Técnicas",
+        languages: "Linguagens & Frameworks",
+        frameworks: "Ferramentas & Tecnologias",
+
+        // Projects
+        projects: "Projetos",
+        featured: "Destacados",
+        all_projects: "Todos os Projetos",
+        project1_title: "Microsserviço de Autenticação",
+        project1_desc:
+            "Um microsserviço de autenticação robusto e seguro construído com .NET 8 ASP.NET Core, implementando JWT com assinatura RS256. Possui um sistema de permissões com funções e grupos, garantindo segurança e consistência nas autorizações de acesso. Segue a Arquitetura Onion para clara separação de responsabilidades.",
+        project2_title: "SDK de Tradução",
+        project2_desc:
+            "Uma biblioteca de localização leve e poderosa para aplicações .NET 8. Simplifica o suporte multilíngue com detecção automática de idioma, traduções baseadas em JSON, substituição de variáveis e mecanismos de fallback. Projetada para desenvolvedores que precisam de internacionalização eficiente e fácil de implementar em suas aplicações.",
+        project3_title: "Bot para Discord",
+        project3_desc: "Um bot multifuncional para Discord projetado para oferecer moderação, entretenimento, ferramentas úteis e opções de configuração personalizáveis. Desenvolvido em Python, ele fornecia um conjunto abrangente de recursos para comunidades no Discord. O projeto foi descontinuado e não está mais sendo mantido ativamente, mas seu código-fonte continua disponível para referência e aprendizado.",
+        project4_title: "Auto Clicker",
+        project4_desc: "Uma ferramenta leve e personalizável para automação de cliques. Desenvolvido em .NET 8 com Windows Forms, possui uma interface intuitiva, configuração de CPS (cliques por segundo), jitter ajustável para simular cliques humanos e um sistema dinâmico de hotkeys. Projetado para facilidade de uso, inclui execução em segundo plano e lógica antideteção com pausas aleatórias. O código-fonte está disponível para quem deseja aprender ou expandir suas funcionalidades.",
+        project5_title: "SDK de Utilitários em .NET",
+        project5_desc: "Um kit de desenvolvimento projetado para simplificar a comunicação entre aplicações e serviços essenciais, incluindo autenticação, armazenamento no Cloudflare R2, envio de e-mails, manipulação de exceções personalizadas e gerenciamento de segredos no Azure Vault. Construído com uma arquitetura modular, este SDK oferece uma maneira eficiente e segura de integrar diversas funcionalidades em aplicações .NET.",
+
+        // Experience
+        experience: "Experiência",
+        job1_title: "Desenvolvedor Júnior",
+        job1_company: "Nuria • Set 2023 - Presente",
+        job1_desc:
+            'Implementei novas funcionalidades em produtos e APIs para o ecossistema de saúde, aprimorando a funcionalidade e experiência do usuário. Contribuí significativamente para o desenvolvimento do "Nuria Appointment", um sistema online de agendamento para consultas médicas e procedimentos. Implementei métricas de observabilidade com Grafana para monitoramento em tempo real e otimizei sistemas de cache para melhorar o desempenho. Colaborei com equipes multidisciplinares para projetar e implantar soluções inovadoras para desafios reais na área da saúde.',
+        job2_title: "Estagiário de Desenvolvimento",
+        job2_company: "Nuria • Fev 2023 - Set 2023",
+        job2_desc:
+            "Desenvolvi e mantive APIs para sistemas de suprimentos na área da saúde, facilitando a integração entre ERPs hospitalares e um dos maiores fornecedores de suprimentos hospitalares do mercado. Participei da depuração e melhoria de sistemas existentes, garantindo a funcionalidade e precisão das APIs. Contribuí para a automação de processos de suprimentos, resultando em maior eficiência e redução de erros operacionais.",
+
+        // Contact
+        contact: "Entre em Contato",
+        contact_text:
+            "Atualmente estou focado em expandir meu conhecimento em tecnologias .NET. Sinta-se à vontade para entrar em contato se quiser discutir potenciais oportunidades ou colaborações.",
+        contact_btn: "Contate-me",
+
+        // Footer
+        rights: "Todos os direitos reservados.",
+        built_with: "Construído com Next.js e Tailwind CSS",
+
+        // Language
+        switch_to: "Switch to English",
+
+        // GitHub
+        view_on_github: "Ver no GitHub",
+
+        // Technologies used
+        technologies_used: "Tecnologias utilizadas",
+    },
+}
+
