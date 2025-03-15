@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description:
         "Portfolio of Rafael Rodrigues, a back-end developer specializing in building robust, scalable systems and APIs.",
     icons: {
-        icon: '/icon.ico'
+        icon: '/man.ico'
     }
 }
 
