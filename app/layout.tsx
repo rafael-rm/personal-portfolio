@@ -9,10 +9,7 @@ const inter = Inter({subsets: ["latin"]})
 export const metadata: Metadata = {
     title: "Rafael Rodrigues | Software Developer",
     description:
-        "Portfolio of Rafael Rodrigues, a back-end developer specializing in building robust, scalable systems and APIs.",
-    icons: {
-        icon: '/man.ico'
-    }
+        "Portfolio of Rafael Rodrigues, a back-end developer specializing in building robust, scalable systems and APIs."
 }
 
 export default function RootLayout({
