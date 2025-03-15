@@ -17,27 +17,30 @@ export default function Portfolio() {
     const technologiesAndTools = ["Git", "Docker", "AWS", "Elastic Search", "Grafana", "CI/CD", "Clarity"]
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-slate-100">
+        <div
+            className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-slate-100 overflow-x-hidden">
             {/* Background elements */}
             <div
                 className="fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,rgba(16,185,129,0.05),transparent_50%),radial-gradient(ellipse_at_bottom_left,rgba(99,102,241,0.05),transparent_50%)]"></div>
 
             <div className="container mx-auto px-4 py-12 max-w-4xl">
                 {/* Header/Hero Section */}
-                <header className="flex flex-col items-start space-y-4 mb-16 md:mb-24 relative">
+                <header className="mb-16 md:mb-24 relative">
                     <div className="absolute -top-20 -left-20 w-64 h-64 bg-emerald-500/5 rounded-full blur-3xl"></div>
 
-                    {/* Language Switcher */}
-                    <div className="absolute top-0 right-0">
-                        <LanguageSwitcher/>
+                    {/* Top row with role and language switcher */}
+                    <div className="flex flex-wrap justify-between items-center gap-4 mb-6 relative">
+                        <div
+                            className="flex items-center space-x-2 backdrop-blur-sm py-1 px-3 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                            <Terminal className="h-4 w-4"/>
+                            <span className="font-mono text-sm">{t("role")}</span>
+                        </div>
+                        <div className="relative z-20">
+                            <LanguageSwitcher/>
+                        </div>
                     </div>
 
-                    <div
-                        className="flex items-center space-x-2 mb-2 backdrop-blur-sm py-1 px-3 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                        <Terminal className="h-4 w-4"/>
-                        <span className="font-mono text-sm">{t("role")}</span>
-                    </div>
-                    <h1 className="text-4xl md:text-6xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-300">
+                    <h1 className="text-4xl md:text-6xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-300 mb-4">
                         Rafael Rodrigues
                     </h1>
                     <p className="text-xl text-slate-400 max-w-2xl mt-4">{t("intro")}</p>
@@ -79,7 +82,7 @@ export default function Portfolio() {
                 {/* About Section */}
                 <section className="mb-16 md:mb-24 relative">
                     <div
-                        className="absolute top-1/2 -right-20 w-64 h-64 bg-indigo-500/5 rounded-full blur-3xl -z-10"></div>
+                        className="absolute top-1/2 right-0 md:-right-20 w-64 h-64 bg-indigo-500/5 rounded-full blur-3xl -z-10"></div>
                     <h2 className="text-2xl font-bold mb-6 text-slate-200 flex items-center">
                         <span
                             className="bg-gradient-to-r from-emerald-500 to-emerald-700 w-8 h-[2px] mr-3 inline-block"></span>
@@ -143,7 +146,7 @@ export default function Portfolio() {
                 {/* Projects Section */}
                 <section className="mb-16 md:mb-24 relative">
                     <div
-                        className="absolute bottom-1/3 -left-20 w-64 h-64 bg-emerald-500/5 rounded-full blur-3xl -z-10"></div>
+                        className="absolute bottom-1/3 left-0 md:-left-20 w-64 h-64 bg-emerald-500/5 rounded-full blur-3xl -z-10"></div>
                     <h2 className="text-2xl font-bold mb-6 text-slate-200 flex items-center">
                         <span
                             className="bg-gradient-to-r from-emerald-500 to-emerald-700 w-8 h-[2px] mr-3 inline-block"></span>
