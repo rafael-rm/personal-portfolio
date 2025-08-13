@@ -101,7 +101,7 @@ const translations = {
         job1_title: "Mid-Level Developer",
         job1_company: "Nuria • Aug 2025 - Present",
         job1_desc:
-            'Leading the development of critical healthcare applications and APIs, with a focus on scalability and performance optimization. Primary architect for the "Nuria Appointment" platform, implementing advanced scheduling algorithms and real-time notification systems. Spearheading the migration to microservices architecture, improving system reliability and deployment efficiency. Mentoring junior developers and establishing coding standards and best practices across the team. Implementing comprehensive monitoring solutions with Grafana and Elasticsearch for proactive issue detection.',
+            'Leading the development of critical healthcare applications and APIs, with a focus on scalability and performance optimization. Primary developer for the "Nuria Appointment" platform, implementing advanced scheduling algorithms and real-time notification systems. Spearheading the migration to microservices architecture, improving system reliability and deployment efficiency. Mentoring junior developers and establishing coding standards and best practices across the team. Implementing comprehensive monitoring solutions with Grafana and Elasticsearch for proactive issue detection.',
         job2_title: "Junior Developer",
         job2_company: "Nuria • Sep 2023 - Jul 2025",
         job2_desc:
@@ -171,7 +171,7 @@ const translations = {
         job1_title: "Desenvolvedor Pleno",
         job1_company: "Nuria • Ago 2025 - Presente",
         job1_desc:
-            'Liderando o desenvolvimento de aplicações e APIs críticas na área da saúde, com foco em escalabilidade e otimização de performance. Arquiteto principal da plataforma "Nuria Appointment", implementando algoritmos avançados de agendamento e sistemas de notificação em tempo real. Coordenando a migração para arquitetura de microsserviços, melhorando a confiabilidade do sistema e eficiência de implantação. Mentorando desenvolvedores júniores e estabelecendo padrões de código e melhores práticas na equipe. Implementando soluções abrangentes de monitoramento com Grafana e Elasticsearch para detecção proativa de problemas.',
+            'Liderando o desenvolvimento de aplicações e APIs críticas na área da saúde, com foco em escalabilidade e otimização de performance. Desenvolvedor principal da plataforma "Nuria Appointment", implementando algoritmos avançados de agendamento e sistemas de notificação em tempo real. Coordenando a migração para arquitetura de microsserviços, melhorando a confiabilidade do sistema e eficiência de implantação. Mentorando desenvolvedores júniores e estabelecendo padrões de código e melhores práticas na equipe. Implementando soluções abrangentes de monitoramento com Grafana e Elasticsearch para detecção proativa de problemas.',
         job2_title: "Desenvolvedor Júnior",
         job2_company: "Nuria • Set 2023 - Jul 2025",
         job2_desc:
