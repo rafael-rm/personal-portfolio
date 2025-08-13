@@ -1,17 +1,17 @@
 "use client"
 
 import Link from "next/link"
-import {Terminal, ArrowRight} from "lucide-react"
-import {SiGithub, SiLinkedin, SiGmail} from "react-icons/si"
+import { Terminal, ArrowRight } from "lucide-react"
+import { SiGithub, SiLinkedin, SiGmail } from "react-icons/si"
 
-import {Button} from "@/components/ui/button"
-import {Card, CardContent} from "@/components/ui/card"
-import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs"
-import {useLanguage} from "@/contexts/language-context"
-import {LanguageSwitcher} from "@/components/language-switcher"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { useLanguage } from "@/contexts/language-context"
+import { LanguageSwitcher } from "@/components/language-switcher"
 
 export default function Portfolio() {
-    const {t} = useLanguage()
+    const { t } = useLanguage()
 
     const languagesAndFrameworks = ["C#", ".NET", "Entity Framework", "SQL", "NoSQL", "Python"]
     const technologiesAndTools = ["Git", "Docker", "AWS", "Elastic Search", "Grafana", "CI/CD", "Clarity"]
@@ -32,11 +32,11 @@ export default function Portfolio() {
                     <div className="flex flex-wrap justify-between items-center gap-4 mb-6 relative">
                         <div
                             className="flex items-center space-x-2 backdrop-blur-sm py-1 px-3 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                            <Terminal className="h-4 w-4"/>
+                            <Terminal className="h-4 w-4" />
                             <span className="font-mono text-sm">{t("role")}</span>
                         </div>
                         <div className="relative z-20">
-                            <LanguageSwitcher/>
+                            <LanguageSwitcher />
                         </div>
                     </div>
 
@@ -51,18 +51,18 @@ export default function Portfolio() {
                                 size="icon"
                                 className="rounded-full bg-slate-800/50 border-slate-700 text-slate-300 hover:text-white hover:border-emerald-500/50 hover:bg-slate-800 transition-all duration-300"
                             >
-                                <SiGithub className="h-5 w-5"/>
+                                <SiGithub className="h-5 w-5" />
                                 <span className="sr-only">GitHub</span>
                             </Button>
                         </a>
                         <a href="https://www.linkedin.com/in/rafael-rodrigues-monteiro/" target="_blank"
-                           rel="noopener noreferrer">
+                            rel="noopener noreferrer">
                             <Button
                                 variant="outline"
                                 size="icon"
                                 className="rounded-full bg-slate-800/50 border-slate-700 text-slate-300 hover:text-white hover:border-emerald-500/50 hover:bg-slate-800 transition-all duration-300"
                             >
-                                <SiLinkedin className="h-5 w-5"/>
+                                <SiLinkedin className="h-5 w-5" />
                                 <span className="sr-only">LinkedIn</span>
                             </Button>
                         </a>
@@ -72,7 +72,7 @@ export default function Portfolio() {
                                 size="icon"
                                 className="rounded-full bg-slate-800/50 border-slate-700 text-slate-300 hover:text-white hover:border-emerald-500/50 hover:bg-slate-800 transition-all duration-300"
                             >
-                                <SiGmail className="h-5 w-5"/>
+                                <SiGmail className="h-5 w-5" />
                                 <span className="sr-only">Email</span>
                             </Button>
                         </a>
@@ -115,8 +115,8 @@ export default function Portfolio() {
                                             key={skill}
                                             className="px-3 py-1 bg-slate-800/70 border border-slate-700/50 text-slate-300 rounded-full text-sm hover:bg-slate-700/70 hover:border-emerald-500/30 transition-colors duration-300"
                                         >
-                      {skill}
-                    </span>
+                                            {skill}
+                                        </span>
                                     ))}
                                 </div>
                             </CardContent>
@@ -134,8 +134,8 @@ export default function Portfolio() {
                                             key={skill}
                                             className="px-3 py-1 bg-slate-800/70 border border-slate-700/50 text-slate-300 rounded-full text-sm hover:bg-slate-700/70 hover:border-emerald-500/30 transition-colors duration-300"
                                         >
-                      {skill}
-                    </span>
+                                            {skill}
+                                        </span>
                                     ))}
                                 </div>
                             </CardContent>
@@ -176,6 +176,12 @@ export default function Portfolio() {
                                     repoUrl="https://github.com/rafael-rm/hyzen-auth"
                                 />
                                 <ProjectCard
+                                    title={t("project6_title")}
+                                    description={t("project6_desc")}
+                                    technologies={["C#", ".NET", "NuGet", "Discord API", "HTTP Client"]}
+                                    repoUrl="https://github.com/rafael-rm/discord-webhook-sender"
+                                />
+                                <ProjectCard
                                     title={t("project5_title")}
                                     description={t("project5_desc")}
                                     technologies={["C#", ".NET", "NuGet"]}
@@ -190,6 +196,12 @@ export default function Portfolio() {
                                     description={t("project1_desc")}
                                     technologies={["C#", ".NET", "ASP.NET Core", "JWT", "RS256", "Onion Architecture"]}
                                     repoUrl="https://github.com/rafael-rm/hyzen-auth"
+                                />
+                                <ProjectCard
+                                    title={t("project6_title")}
+                                    description={t("project6_desc")}
+                                    technologies={["C#", ".NET", "NuGet", "Discord API", "HTTP Client"]}
+                                    repoUrl="https://github.com/rafael-rm/discord-webhook-sender"
                                 />
                                 <ProjectCard
                                     title={t("project2_title")}
@@ -230,7 +242,7 @@ export default function Portfolio() {
                     <div className="space-y-8">
                         <div className="border-l-2 border-emerald-500/30 pl-6 relative">
                             <div
-                                className="absolute w-4 h-4 bg-emerald-500 rounded-full -left-[9px] top-1.5 shadow-lg shadow-emerald-500/20"></div>
+                                className="absolute w-4 h-4 bg-emerald-500 rounded-full -left-[9px] top-0 shadow-lg shadow-emerald-500/20"></div>
                             <h3 className="text-lg font-semibold text-slate-200">{t("job1_title")}</h3>
                             <p className="text-emerald-400 mb-2">{t("job1_company")}</p>
                             <div
@@ -240,13 +252,13 @@ export default function Portfolio() {
                                 <div className="mt-4">
                                     <p className="text-sm font-medium text-emerald-400 mb-2">{t("technologies_used")}:</p>
                                     <div className="flex flex-wrap gap-2">
-                                        {["C#", ".NET", "ASP.NET Core", "REST APIs", "Entity Framework", "SQL", "Grafana", "Redis", "Docker", "Git", "DynamoDB", "AWS SQS", "AWS Lambda", "Elastic Search", "AWS RDS"].map((tech) => (
+                                        {["C#", ".NET", "ASP.NET Core", "REST APIs", "Entity Framework", "SQL", "Grafana", "Redis", "Docker", "Git", "DynamoDB", "AWS SQS", "AWS Lambda", "Elastic Search", "AWS RDS", "Microservices", "CI/CD"].map((tech) => (
                                             <span
                                                 key={tech}
                                                 className="px-2 py-1 bg-slate-800/70 border border-slate-700/50 text-slate-300 rounded-full text-xs hover:bg-slate-700/70 hover:border-emerald-500/30 transition-colors duration-300"
                                             >
-                        {tech}
-                      </span>
+                                                {tech}
+                                            </span>
                                         ))}
                                     </div>
                                 </div>
@@ -255,7 +267,7 @@ export default function Portfolio() {
 
                         <div className="border-l-2 border-slate-700/50 pl-6 relative">
                             <div
-                                className="absolute w-4 h-4 bg-slate-700 rounded-full -left-[9px] top-1.5 shadow-lg shadow-slate-700/20"></div>
+                                className="absolute w-4 h-4 bg-slate-700 rounded-full -left-[9px] top-1/2 transform -translate-y-1/2 shadow-lg shadow-slate-700/20"></div>
                             <h3 className="text-lg font-semibold text-slate-200">{t("job2_title")}</h3>
                             <p className="text-emerald-400 mb-2">{t("job2_company")}</p>
                             <div
@@ -265,13 +277,38 @@ export default function Portfolio() {
                                 <div className="mt-4">
                                     <p className="text-sm font-medium text-emerald-400 mb-2">{t("technologies_used")}:</p>
                                     <div className="flex flex-wrap gap-2">
+                                        {["C#", ".NET", "ASP.NET Core", "REST APIs", "Entity Framework", "SQL", "Grafana", "Redis", "Docker", "Git", "DynamoDB", "AWS SQS", "AWS Lambda", "Elastic Search", "AWS RDS"].map((tech) => (
+                                            <span
+                                                key={tech}
+                                                className="px-2 py-1 bg-slate-800/70 border border-slate-700/50 text-slate-300 rounded-full text-xs hover:bg-slate-700/70 hover:border-emerald-500/30 transition-colors duration-300"
+                                            >
+                                                {tech}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="border-l-2 border-slate-700/50 pl-6 relative">
+                            <div
+                                className="absolute w-4 h-4 bg-slate-700 rounded-full -left-[9px] bottom-0 shadow-lg shadow-slate-700/20"></div>
+                            <h3 className="text-lg font-semibold text-slate-200">{t("job3_title")}</h3>
+                            <p className="text-emerald-400 mb-2">{t("job3_company")}</p>
+                            <div
+                                className="bg-slate-800/20 backdrop-blur-sm border border-slate-700/30 rounded-lg p-4 shadow-lg">
+                                <p className="text-slate-300 mb-4">{t("job3_desc")}</p>
+
+                                <div className="mt-4">
+                                    <p className="text-sm font-medium text-emerald-400 mb-2">{t("technologies_used")}:</p>
+                                    <div className="flex flex-wrap gap-2">
                                         {["C#", ".NET", "ASP.NET Core", "REST APIs", "SQL", "Entity Framework", "Git", "AWS", "S3"].map((tech) => (
                                             <span
                                                 key={tech}
                                                 className="px-2 py-1 bg-slate-800/70 border border-slate-700/50 text-slate-300 rounded-full text-xs hover:bg-slate-700/70 hover:border-emerald-500/30 transition-colors duration-300"
                                             >
-                        {tech}
-                      </span>
+                                                {tech}
+                                            </span>
                                         ))}
                                     </div>
                                 </div>
@@ -295,12 +332,12 @@ export default function Portfolio() {
                         <CardContent className="pt-6 relative">
                             <p className="text-slate-300 mb-6">{t("contact_text")}</p>
                             <a href="https://www.linkedin.com/in/rafael-rodrigues-monteiro/" target="_blank"
-                               className="w-full">
+                                className="w-full">
                                 <Button
                                     className="bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-600 text-white border-none shadow-lg shadow-emerald-700/20 hover:shadow-emerald-700/40 transition-all duration-300">
-                                    <SiLinkedin className="mr-2 h-4 w-4"/>
+                                    <SiLinkedin className="mr-2 h-4 w-4" />
                                     {t("contact_btn")}
-                                    <ArrowRight className="ml-2 h-4 w-4"/>
+                                    <ArrowRight className="ml-2 h-4 w-4" />
                                 </Button>
                             </a>
                         </CardContent>
@@ -320,17 +357,17 @@ export default function Portfolio() {
 }
 
 function ProjectCard({
-                         title,
-                         description,
-                         technologies,
-                         repoUrl = "#",
-                     }: {
+    title,
+    description,
+    technologies,
+    repoUrl = "#",
+}: {
     title: string
     description: string
     technologies: string[]
     repoUrl?: string
 }) {
-    const {t} = useLanguage()
+    const { t } = useLanguage()
 
     return (
         <Card
@@ -350,8 +387,8 @@ function ProjectCard({
                                 key={tech}
                                 className="px-2 py-1 bg-slate-800/70 border border-slate-700/50 text-slate-300 rounded-full text-xs hover:bg-slate-700/70 hover:border-emerald-500/30 transition-colors duration-300"
                             >
-                {tech}
-              </span>
+                                {tech}
+                            </span>
                         ))}
                     </div>
 
@@ -367,7 +404,7 @@ function ProjectCard({
                             rel="noopener noreferrer"
                             aria-label={`${t("view_on_github")}: ${title}`}
                         >
-                            <SiGithub className="h-4 w-4"/>
+                            <SiGithub className="h-4 w-4" />
                         </Link>
                     </Button>
                 </div>

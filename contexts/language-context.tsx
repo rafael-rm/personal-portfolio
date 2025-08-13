@@ -68,7 +68,7 @@ const translations = {
         // About
         about: "About",
         about_p1:
-            "Software Developer with 2 years of experience, specialized in back-end development with C#. I have proven skills in working with cross-functional teams to define project requirements and deliverables, always focused on ensuring code quality and on-time delivery of projects.",
+            "Software Developer with 3 years of experience, specialized in back-end development with C#. I have proven skills in working with cross-functional teams to define project requirements and deliverables, always focused on ensuring code quality and on-time delivery of projects.",
         about_p2:
             "I am an adept of development best practices and have experience in continuous integration and continuous delivery (CI/CD), which allows me to develop robust and efficient solutions. Currently focused on improving my .NET skills, constantly seeking to expand my knowledge in technologies.",
 
@@ -93,16 +93,22 @@ const translations = {
         project4_desc: "A lightweight and customizable tool for click automation. Developed in .NET 8 using Windows Forms, it features an intuitive interface, adjustable CPS (clicks per second), configurable jitter for human-like randomness, and a dynamic hotkey system. Designed for ease of use, it includes background execution and anti-detection logic with random pauses. The source code is available for those interested in learning or extending its functionality.",
         project5_title: ".NET Utility SDK",
         project5_desc: "A development kit designed to streamline communication between applications and essential services, including authentication, Cloudflare R2 storage, email sending, custom exception handling, and secret management in Azure Vault. Built with a modular architecture, this SDK provides a seamless and secure way to integrate multiple functionalities into .NET applications.",
+        project6_title: "Discord Webhook Sender",
+        project6_desc: "A lightweight and easy-to-use .NET library for sending Discord webhooks with rich embeds and message formatting. This library provides a simple and intuitive API for creating and sending Discord webhook messages with support for embeds, colors, fields, and more. Features comprehensive validation, fluent API design, and automatic Discord API limit enforcement.",
 
         // Experience
         experience: "Experience",
-        job1_title: "Junior Developer",
-        job1_company: "Nuria • Sep 2023 - Present",
+        job1_title: "Mid-Level Developer",
+        job1_company: "Nuria • Aug 2025 - Present",
         job1_desc:
-            'Implemented new features in products and APIs for the healthcare ecosystem, enhancing functionality and user experience. Key contributor to the development of "Nuria Appointment", an online scheduling system for medical consultations and procedures. Implemented observability metrics with Grafana for real-time monitoring and optimized caching systems to improve performance. Collaborated with cross-functional teams to design and deploy innovative solutions for real-world healthcare challenges.',
-        job2_title: "Development Intern",
-        job2_company: "Nuria • Feb 2023 - Sep 2023",
+            'Leading the development of critical healthcare applications and APIs, with a focus on scalability and performance optimization. Primary architect for the "Nuria Appointment" platform, implementing advanced scheduling algorithms and real-time notification systems. Spearheading the migration to microservices architecture, improving system reliability and deployment efficiency. Mentoring junior developers and establishing coding standards and best practices across the team. Implementing comprehensive monitoring solutions with Grafana and Elasticsearch for proactive issue detection.',
+        job2_title: "Junior Developer",
+        job2_company: "Nuria • Sep 2023 - Jul 2025",
         job2_desc:
+            'Implemented new features in products and APIs for the healthcare ecosystem, enhancing functionality and user experience. Key contributor to the development of "Nuria Appointment", an online scheduling system for medical consultations and procedures. Implemented observability metrics with Grafana for real-time monitoring and optimized caching systems to improve performance. Collaborated with cross-functional teams to design and deploy innovative solutions for real-world healthcare challenges.',
+        job3_title: "Development Intern",
+        job3_company: "Nuria • Feb 2023 - Sep 2023",
+        job3_desc:
             "Developed and maintained APIs for healthcare supply systems, facilitating integration between hospital ERPs and one of the largest hospital supply providers in the market. Participated in debugging and improving existing systems, ensuring API functionality and accuracy. Contributed to the automation of supply processes, resulting in greater efficiency and reduced operational errors.",
 
         // Contact
@@ -132,7 +138,7 @@ const translations = {
         // About
         about: "Sobre",
         about_p1:
-            "Desenvolvedor de Software com 2 anos de experiência, especializado em desenvolvimento back-end com C#. Possuo habilidades comprovadas em trabalhar com equipes multifuncionais para definir requisitos e entregas de projetos, sempre focado em garantir a qualidade do código e a entrega pontual dos projetos.",
+            "Desenvolvedor de Software com 3 anos de experiência, especializado em desenvolvimento back-end com C#. Possuo habilidades comprovadas em trabalhar com equipes multifuncionais para definir requisitos e entregas de projetos, sempre focado em garantir a qualidade do código e a entrega pontual dos projetos.",
         about_p2:
             "Sou adepto das melhores práticas de desenvolvimento e tenho experiência em integração e entrega contínuas (CI/CD), o que me permite desenvolver soluções robustas e eficientes. Atualmente focado em aprimorar minhas habilidades em .NET, buscando constantemente expandir meu conhecimento em tecnologias.",
 
@@ -157,16 +163,22 @@ const translations = {
         project4_desc: "Uma ferramenta leve e personalizável para automação de cliques. Desenvolvido em .NET 8 com Windows Forms, possui uma interface intuitiva, configuração de CPS (cliques por segundo), jitter ajustável para simular cliques humanos e um sistema dinâmico de hotkeys. Projetado para facilidade de uso, inclui execução em segundo plano e lógica antideteção com pausas aleatórias. O código-fonte está disponível para quem deseja aprender ou expandir suas funcionalidades.",
         project5_title: "SDK de Utilitários em .NET",
         project5_desc: "Um kit de desenvolvimento projetado para simplificar a comunicação entre aplicações e serviços essenciais, incluindo autenticação, armazenamento no Cloudflare R2, envio de e-mails, manipulação de exceções personalizadas e gerenciamento de segredos no Azure Vault. Construído com uma arquitetura modular, este SDK oferece uma maneira eficiente e segura de integrar diversas funcionalidades em aplicações .NET.",
+        project6_title: "Discord Webhook Sender",
+        project6_desc: "Uma biblioteca .NET leve e fácil de usar para enviar webhooks do Discord com embeds ricos e formatação de mensagens. Esta biblioteca fornece uma API simples e intuitiva para criar e enviar mensagens de webhook do Discord com suporte para embeds, cores, campos e muito mais. Possui validação abrangente, design de API fluente e aplicação automática dos limites da API do Discord.",
 
         // Experience
         experience: "Experiência",
-        job1_title: "Desenvolvedor Júnior",
-        job1_company: "Nuria • Set 2023 - Presente",
+        job1_title: "Desenvolvedor Pleno",
+        job1_company: "Nuria • Ago 2025 - Presente",
         job1_desc:
-            'Implementei novas funcionalidades em produtos e APIs para o ecossistema de saúde, aprimorando a funcionalidade e experiência do usuário. Contribuí significativamente para o desenvolvimento do "Nuria Appointment", um sistema online de agendamento para consultas médicas e procedimentos. Implementei métricas de observabilidade com Grafana para monitoramento em tempo real e otimizei sistemas de cache para melhorar o desempenho. Colaborei com equipes multidisciplinares para projetar e implantar soluções inovadoras para desafios reais na área da saúde.',
-        job2_title: "Estagiário de Desenvolvimento",
-        job2_company: "Nuria • Fev 2023 - Set 2023",
+            'Liderando o desenvolvimento de aplicações e APIs críticas na área da saúde, com foco em escalabilidade e otimização de performance. Arquiteto principal da plataforma "Nuria Appointment", implementando algoritmos avançados de agendamento e sistemas de notificação em tempo real. Coordenando a migração para arquitetura de microsserviços, melhorando a confiabilidade do sistema e eficiência de implantação. Mentorando desenvolvedores júniores e estabelecendo padrões de código e melhores práticas na equipe. Implementando soluções abrangentes de monitoramento com Grafana e Elasticsearch para detecção proativa de problemas.',
+        job2_title: "Desenvolvedor Júnior",
+        job2_company: "Nuria • Set 2023 - Jul 2025",
         job2_desc:
+            'Implementei novas funcionalidades em produtos e APIs para o ecossistema de saúde, aprimorando a funcionalidade e experiência do usuário. Contribuí significativamente para o desenvolvimento do "Nuria Appointment", um sistema online de agendamento para consultas médicas e procedimentos. Implementei métricas de observabilidade com Grafana para monitoramento em tempo real e otimizei sistemas de cache para melhorar o desempenho. Colaborei com equipes multidisciplinares para projetar e implantar soluções inovadoras para desafios reais na área da saúde.',
+        job3_title: "Estagiário de Desenvolvimento",
+        job3_company: "Nuria • Fev 2023 - Set 2023",
+        job3_desc:
             "Desenvolvi e mantive APIs para sistemas de suprimentos na área da saúde, facilitando a integração entre ERPs hospitalares e um dos maiores fornecedores de suprimentos hospitalares do mercado. Participei da depuração e melhoria de sistemas existentes, garantindo a funcionalidade e precisão das APIs. Contribuí para a automação de processos de suprimentos, resultando em maior eficiência e redução de erros operacionais.",
 
         // Contact
