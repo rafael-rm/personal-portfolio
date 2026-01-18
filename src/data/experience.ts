@@ -22,7 +22,7 @@ export const experiences: Experience[] = [
         companyKey: 'job2_company',
         periodKey: 'job2_period',
         descriptionKey: 'job2_desc',
-        technologies: ['C#', '.NET', 'Redis', 'PostgreSQL', 'Grafana', 'Docker'],
+        technologies: ['C#', '.NET', 'DynamoDB', 'PostgreSQL', 'Grafana', 'Docker'],
     },
     {
         id: 'intern',

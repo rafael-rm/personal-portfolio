@@ -15,14 +15,14 @@ export const translations = {
         greeting: "Hello, I'm",
         role: 'Software Developer',
         intro:
-            'I build robust, scalable back-end systems with C# and .NET that power modern web applications.',
+            'Focused on building high-performance .NET architectures. I design and build scalable, mission-critical systems that drive business value.',
 
         // About
         about: 'About',
         about_p1:
-            'Software Developer with 3 years of experience, specialized in back-end development with C#. I have proven skills in working with cross-functional teams to define project requirements and deliverables, always focused on ensuring code quality and on-time delivery of projects.',
+            'Backend Engineer focused on delivering robust, maintainable software solutions. My expertise lies in designing clean architectures and optimizing system performance using the .NET ecosystem. I thrive in collaborative environments, bridging the gap between complex technical requirements and business goals, ensuring code quality and reliable delivery.',
         about_p2:
-            'I am an adept of development best practices and have experience in continuous integration and continuous delivery (CI/CD), which allows me to develop robust and efficient solutions. Currently focused on improving my .NET skills, constantly seeking to expand my knowledge in technologies.',
+            'More than just functional code, I aim to build resilient systems that are easy to evolve. My focus is on making architectural decisions that balance immediate performance with long-term maintainability, ensuring the software grows sustainably alongside the business.',
 
         // Skills
         skills: 'Technical Skills',
@@ -35,22 +35,22 @@ export const translations = {
         all_projects: 'All Projects',
         project1_title: 'Authentication Microservice',
         project1_desc:
-            'A robust and secure authentication microservice built with .NET 8 ASP.NET Core, implementing JWT with RS256 signature. Features a permissions system with roles and groups, ensuring security and consistency in access authorizations. Follows Onion Architecture for clear separation of responsibilities.',
+            'High-security authentication microservice implementing RS256 JWTs and granular permission management. Architected with Onion Architecture to ensure testability, scalability, and strict separation of concerns.',
         project2_title: 'Translation SDK',
         project2_desc:
-            'A lightweight and powerful localization library for .NET 8 applications. Simplifies multilingual support with automatic language detection, JSON-based translations, variable substitution, and fallback mechanisms. Designed for developers who need efficient, easy-to-implement internationalization in their applications.',
+            'High-performance localization library for .NET 8 applications. Streamlines internationalization with automatic language detection, zero-allocation parsing strategies, and robust fallback mechanisms, significantly reducing developer integration time.',
         project3_title: 'Discord Bot',
         project3_desc:
-            'A multifunctional Discord bot designed to offer moderation, entertainment, utility tools, and customizable settings. Developed in Python, it provided a comprehensive set of features for Discord communities. The project has been discontinued and is no longer actively maintained, but its source code remains available for reference and learning purposes.',
+            'Designed and deployed a multifunctional Discord bot serving active communities. Leveraged Python and Firebase for real-time data synchronization and complex state management before project sunset.',
         project4_title: 'Auto Clicker',
         project4_desc:
-            'A lightweight and customizable tool for click automation. Developed in .NET 8 using Windows Forms, it features an intuitive interface, adjustable CPS (clicks per second), configurable jitter for human-like randomness, and a dynamic hotkey system. Designed for ease of use, it includes background execution and anti-detection logic with random pauses.',
+            'Engineered a low-latency automation tool with human-like behavior simulation. Implemented advanced anti-detection algorithms and optimized background processing using .NET 8 and Windows Forms to ensure stability under high load.',
         project5_title: '.NET Utility SDK',
         project5_desc:
-            'A development kit designed to streamline communication between applications and essential services, including authentication, Cloudflare R2 storage, email sending, custom exception handling, and secret management in Azure Vault. Built with a modular architecture, this SDK provides a seamless and secure way to integrate multiple functionalities into .NET applications.',
+            'Modular ecosystem utility SDK unifying Cloudflare R2, Azure Vault, and notification services. Standardized exception handling and resilience patterns (Retry/Circuit Breaker) across multiple microservices, improving system reliability.',
         project6_title: 'Discord Webhook Sender',
         project6_desc:
-            'A lightweight and easy-to-use .NET library for sending Discord webhooks with rich embeds and message formatting. This library provides a simple and intuitive API for creating and sending Discord webhook messages with support for embeds, colors, fields, and more.',
+            '.NET library abstracting Discord\'s Webhook API. Provides a fluent interface for constructing complex rich media messages (Embeds), simplifying third-party integration and standardizing notification formats.',
 
         // Experience
         experience: 'Experience',
@@ -58,22 +58,22 @@ export const translations = {
         job1_company: 'Nuria',
         job1_period: 'Aug 2025 - Present',
         job1_desc:
-            'Leading the development of critical healthcare applications and APIs, with a focus on scalability and performance optimization. Primary developer for the "Nuria Appointment" platform, implementing advanced scheduling algorithms and real-time notification systems. Spearheading the migration to microservices architecture, improving system reliability and deployment efficiency. Mentoring junior developers and establishing coding standards and best practices across the team.',
+            "Core Developer for the 'Nuria Appointment' scheduling engine and Architect of the integration with 'Reserve with Google' (a pioneering healthcare implementation in Brazil). Prioritizing high availability and sub-second latency while contributing to system scalability and maintainability improvements. Mentoring the engineering team on C# best practices and code quality standards.",
         job2_title: 'Junior Developer',
         job2_company: 'Nuria',
         job2_period: 'Sep 2023 - Jul 2025',
         job2_desc:
-            'Implemented new features in products and APIs for the healthcare ecosystem, enhancing functionality and user experience. Key contributor to the development of "Nuria Appointment", an online scheduling system for medical consultations and procedures. Implemented observability metrics with Grafana for real-time monitoring and optimized caching systems to improve performance.',
+            'Developer of key features for the healthcare ecosystem, directly impacting user experience. Played a core role in developing the online scheduling system, ensuring data integrity. Implemented comprehensive observability via Grafana/Elastic for proactive monitoring and optimized caching strategies (DynamoDB) to boost application throughput.',
         job3_title: 'Development Intern',
         job3_company: 'Nuria',
         job3_period: 'Feb 2023 - Sep 2023',
         job3_desc:
-            'Developed and maintained APIs for healthcare supply systems, facilitating integration between hospital ERPs and one of the largest hospital supply providers in the market. Participated in debugging and improving existing systems, ensuring API functionality and accuracy.',
+            'Built and maintained integration APIs connecting hospital ERPs with major supply chain providers. Focused on system reliability and debugging complex integration scenarios to ensure seamless data synchronization.',
 
         // Contact
         contact: 'Get In Touch',
         contact_text:
-            "I'm currently focused on expanding my knowledge in .NET technologies. Feel free to reach out if you'd like to discuss potential opportunities or collaborations.",
+            "Open to discussing complex backend challenges. Let's connect to define how I can contribute to your team's success.",
         contact_btn: 'Contact Me',
 
         // Footer
@@ -101,14 +101,14 @@ export const translations = {
         greeting: 'Olá, eu sou',
         role: 'Desenvolvedor de Software',
         intro:
-            'Desenvolvo sistemas back-end robustos e escaláveis com C# e .NET que impulsionam aplicações web modernas.',
+            'Focado em construir arquiteturas .NET de alta performance. Projeto e construo sistemas escaláveis e de missão crítica que geram valor real ao negócio.',
 
         // About
         about: 'Sobre',
         about_p1:
-            'Desenvolvedor de Software com 3 anos de experiência, especializado em desenvolvimento back-end com C#. Possuo habilidades comprovadas em trabalhar com equipes multifuncionais para definir requisitos e entregas de projetos, sempre focado em garantir a qualidade do código e a entrega pontual dos projetos.',
+            'Engenheiro Backend focado na entrega de soluções de software robustas e manuteníveis. Minha expertise está no design de arquiteturas limpas e na otimização de performance utilizando o ecossistema .NET. Atuo na ponte entre requisitos técnicos complexos e objetivos de negócio, garantindo qualidade de código e entregas confiáveis.',
         about_p2:
-            'Sou adepto das melhores práticas de desenvolvimento e tenho experiência em integração e entrega contínuas (CI/CD), o que me permite desenvolver soluções robustas e eficientes. Atualmente focado em aprimorar minhas habilidades em .NET, buscando constantemente expandir meu conhecimento em tecnologias.',
+            'Mais do que apenas código funcional, busco criar sistemas resilientes e fáceis de evoluir. Meu foco está em tomar decisões arquiteturais que equilibrem performance imediata com manutenibilidade a longo prazo, garantindo que o software cresça sustentavelmente junto com o negócio.',
 
         // Skills
         skills: 'Habilidades Técnicas',
@@ -121,22 +121,22 @@ export const translations = {
         all_projects: 'Todos os Projetos',
         project1_title: 'Microsserviço de Autenticação',
         project1_desc:
-            'Um microsserviço de autenticação robusto e seguro construído com .NET 8 ASP.NET Core, implementando JWT com assinatura RS256. Possui um sistema de permissões com funções e grupos, garantindo segurança e consistência nas autorizações de acesso. Segue a Arquitetura Onion para clara separação de responsabilidades.',
+            'Microsserviço de autenticação de alta segurança implementando JWTs RS256 e gestão granular de permissões. Projetado com Arquitetura Onion para garantir testabilidade, escalabilidade e estrita separação de responsabilidades.',
         project2_title: 'SDK de Tradução',
         project2_desc:
-            'Uma biblioteca de localização leve e poderosa para aplicações .NET 8. Simplifica o suporte multilíngue com detecção automática de idioma, traduções baseadas em JSON, substituição de variáveis e mecanismos de fallback. Projetada para desenvolvedores que precisam de internacionalização eficiente e fácil de implementar em suas aplicações.',
+            'Biblioteca de localização de alta performance para aplicações .NET 8. Otimiza a internacionalização com detecção automática de idioma, estratégias de parsing com alocação zero e mecanismos de fallback robustos, reduzindo significativamente o tempo de integração.',
         project3_title: 'Bot para Discord',
         project3_desc:
-            'Um bot multifuncional para Discord projetado para oferecer moderação, entretenimento, ferramentas úteis e opções de configuração personalizáveis. Desenvolvido em Python, ele fornecia um conjunto abrangente de recursos para comunidades no Discord. O projeto foi descontinuado e não está mais sendo mantido ativamente, mas seu código-fonte continua disponível para referência e aprendizado.',
+            'Projetei e implantei um bot multifuncional para Discord servindo comunidades ativas. Utilizei Python e Firebase para sincronização de dados em tempo real e gerenciamento complexo de estado antes do encerramento do projeto.',
         project4_title: 'Auto Clicker',
         project4_desc:
-            'Uma ferramenta leve e personalizável para automação de cliques. Desenvolvido em .NET 8 com Windows Forms, possui uma interface intuitiva, configuração de CPS (cliques por segundo), jitter ajustável para simular cliques humanos e um sistema dinâmico de hotkeys. Projetado para facilidade de uso, inclui execução em segundo plano e lógica antideteção com pausas aleatórias.',
+            'Engenharia de ferramenta de automação de baixa latência com simulação de comportamento humano. Implementei algoritmos avançados de anti-detecção e processamento em segundo plano otimizado usando .NET 8 e Windows Forms.',
         project5_title: 'SDK de Utilitários em .NET',
         project5_desc:
-            'Um kit de desenvolvimento projetado para simplificar a comunicação entre aplicações e serviços essenciais, incluindo autenticação, armazenamento no Cloudflare R2, envio de e-mails, manipulação de exceções personalizadas e gerenciamento de segredos no Azure Vault. Construído com uma arquitetura modular, este SDK oferece uma maneira eficiente e segura de integrar diversas funcionalidades em aplicações .NET.',
+            'SDK utilitário modular unificando Cloudflare R2, Azure Vault e serviços de notificação. Padronizou tratamento de exceções e padrões de resiliência (Retry/Circuit Breaker) em múltiplos microsserviços, melhorando a confiabilidade do sistema.',
         project6_title: 'Discord Webhook Sender',
         project6_desc:
-            'Uma biblioteca .NET leve e fácil de usar para enviar webhooks do Discord com embeds ricos e formatação de mensagens. Esta biblioteca fornece uma API simples e intuitiva para criar e enviar mensagens de webhook do Discord com suporte para embeds, cores, campos e muito mais.',
+            'Biblioteca .NET abstraindo a API de Webhook do Discord. Fornece uma interface fluente para construção de mensagens complexas de mídia rica (Embeds), simplificando integrações de terceiros e padronizando formatos de notificação.',
 
         // Experience
         experience: 'Experiência',
@@ -144,22 +144,22 @@ export const translations = {
         job1_company: 'Nuria',
         job1_period: 'Ago 2025 - Presente',
         job1_desc:
-            'Liderando o desenvolvimento de aplicações e APIs críticas na área da saúde, com foco em escalabilidade e otimização de performance. Desenvolvedor principal da plataforma "Nuria Appointment", implementando algoritmos avançados de agendamento e sistemas de notificação em tempo real. Coordenando a migração para arquitetura de microsserviços, melhorando a confiabilidade do sistema e eficiência de implantação. Mentorando desenvolvedores júniores e estabelecendo padrões de código e melhores práticas na equipe.',
+            "Desenvolvedor responsável pelo motor de agendamento 'Nuria Appointment' e Arquiteto da integração com o 'Reserve with Google' (uma das primeiras do setor de saúde no Brasil). Priorizando alta disponibilidade e latência mínima, enquanto contribuo para melhorias de escalabilidade e manutenibilidade do sistema. Mentorando o time de engenharia em boas práticas de C# e padrões de qualidade.",
         job2_title: 'Desenvolvedor Júnior',
         job2_company: 'Nuria',
         job2_period: 'Set 2023 - Jul 2025',
         job2_desc:
-            'Implementei novas funcionalidades em produtos e APIs para o ecossistema de saúde, aprimorando a funcionalidade e experiência do usuário. Contribuí significativamente para o desenvolvimento do "Nuria Appointment", um sistema online de agendamento para consultas médicas e procedimentos. Implementei métricas de observabilidade com Grafana para monitoramento em tempo real e otimizei sistemas de cache para melhorar o desempenho.',
+            'Desenvolvedor de funcionalidades-chave para o ecossistema de saúde, impactando diretamente a experiência do usuário. Atuei no desenvolvimento central do sistema de agendamento online, assegurando integridade de dados. Implementei observabilidade abrangente via Grafana/Elastic para monitoramento proativo e estratégias de cache (DynamoDB) para maximizar o throughput da aplicação.',
         job3_title: 'Estagiário de Desenvolvimento',
         job3_company: 'Nuria',
         job3_period: 'Fev 2023 - Set 2023',
         job3_desc:
-            'Desenvolvi e mantive APIs para sistemas de suprimentos na área da saúde, facilitando a integração entre ERPs hospitalares e um dos maiores fornecedores de suprimentos hospitalares do mercado. Participei da depuração e melhoria de sistemas existentes, garantindo a funcionalidade e precisão das APIs.',
+            'Construiu e manteve APIs de integração conectando ERPs hospitalares a grandes provedores de cadeia de suprimentos. Focado na confiabilidade do sistema e na depuração de cenários complexos de integração para garantir sincronização de dados fluida.',
 
         // Contact
         contact: 'Entre em Contato',
         contact_text:
-            'Atualmente estou focado em expandir meu conhecimento em tecnologias .NET. Sinta-se à vontade para entrar em contato se quiser discutir potenciais oportunidades ou colaborações.',
+            'Aberto para discutir desafios complexos de backend. Vamos conversar sobre como posso contribuir para o sucesso da sua equipe.',
         contact_btn: 'Contate-me',
 
         // Footer
