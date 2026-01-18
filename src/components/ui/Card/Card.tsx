@@ -16,7 +16,7 @@ export function Card({ children, className = '', onClick, delay = 0 }: CardProps
             onClick={onClick}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-50px' }}
+            viewport={{ once: true }}
             transition={{ duration: 0.4, delay }}
         >
             {children}

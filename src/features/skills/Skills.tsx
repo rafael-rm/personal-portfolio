@@ -17,7 +17,7 @@ export function Skills() {
                         className={styles.category}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, margin: '-50px' }}
+                        viewport={{ once: true }}
                         transition={{ duration: 0.4, delay: categoryIndex * 0.1 }}
                     >
                         <h3 className={styles.categoryTitle}>
