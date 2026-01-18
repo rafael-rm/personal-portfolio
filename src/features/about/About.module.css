@@ -1,0 +1,20 @@
+.content {
+    max-width: 800px;
+}
+
+.paragraph {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--space-6);
+}
+
+.paragraph:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .paragraph {
+        font-size: var(--font-size-base);
+    }
+}

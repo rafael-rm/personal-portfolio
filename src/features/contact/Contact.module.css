@@ -1,0 +1,26 @@
+.contact {
+    text-align: center;
+    padding: var(--space-20) 0;
+}
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.text {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--space-8);
+}
+
+.button {
+    display: inline-flex;
+}
+
+@media (max-width: 768px) {
+    .text {
+        font-size: var(--font-size-base);
+    }
+}
