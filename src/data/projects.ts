@@ -13,7 +13,7 @@ export const projects: Project[] = [
         titleKey: 'project1_title',
         descriptionKey: 'project1_desc',
         technologies: ['C#', '.NET', 'JWT', 'PostgreSQL'],
-        githubUrl: 'https://github.com/rafael-rm/auth-microservice',
+        githubUrl: 'https://github.com/rafael-rm/hyzen-auth',
         featured: true,
     },
         {
@@ -28,7 +28,7 @@ export const projects: Project[] = [
         titleKey: 'project2_title',
         descriptionKey: 'project2_desc',
         technologies: ['C#', '.NET', 'Nuget'],
-        githubUrl: 'https://github.com/rafael-rm/translation-sdk',
+        githubUrl: 'https://github.com/rafael-rm/hyzen-languages',
         featured: true,
     },
     {
@@ -36,21 +36,21 @@ export const projects: Project[] = [
         titleKey: 'project3_title',
         descriptionKey: 'project3_desc',
         technologies: ['Python', 'Discord.py', 'Firebase'],
-        githubUrl: 'https://github.com/rafael-rm/discord-bot',
+        githubUrl: 'https://github.com/rafael-rm/hyzen-discord-bot',
     },
     {
         id: 'auto-clicker',
         titleKey: 'project4_title',
         descriptionKey: 'project4_desc',
         technologies: ['C#', '.NET', 'Windows Forms'],
-        githubUrl: 'https://github.com/rafael-rm/auto-clicker',
+        githubUrl: 'https://github.com/rafael-rm/hyzen-auto-clicker',
     },
     {
         id: 'dotnet-utility-sdk',
         titleKey: 'project5_title',
         descriptionKey: 'project5_desc',
         technologies: ['C#', '.NET', 'Nuget'],
-        githubUrl: 'https://github.com/rafael-rm/dotnet-utility-sdk',
+        githubUrl: 'https://github.com/rafael-rm/hyzen-sdk',
         featured: true,
     },
 ]
