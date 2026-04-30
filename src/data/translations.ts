@@ -54,20 +54,25 @@ export const translations = {
 
         // Experience
         experience: 'Experience',
-        job1_title: 'Mid-Level Developer',
-        job1_company: 'Nuria',
-        job1_period: 'Aug 2025 - Present',
-        job1_desc:
-            "Core Developer for the 'Nuria Appointment' scheduling engine and Architect of the integration with 'Reserve with Google' (a pioneering healthcare implementation in Brazil). Prioritizing high availability and sub-second latency while contributing to system scalability and maintainability improvements. Mentoring the engineering team on C# best practices and code quality standards.",
-        job2_title: 'Junior Developer',
-        job2_company: 'Nuria',
-        job2_period: 'Sep 2023 - Jul 2025',
-        job2_desc:
-            'Developer of key features for the healthcare ecosystem, directly impacting user experience. Played a core role in developing the online scheduling system, ensuring data integrity. Implemented comprehensive observability via Grafana/Elastic for proactive monitoring and optimized caching strategies (DynamoDB) to boost application throughput.',
-        job3_title: 'Development Intern',
-        job3_company: 'Nuria',
-        job3_period: 'Feb 2023 - Sep 2023',
+        job3_title: 'Software Engineer',
+        job3_company: 'Tryvia',
+        job3_period: 'Apr 2026 - Present',
         job3_desc:
+            'Taking on the challenge of building and evolving high-performance solutions for the strategic management of fleets and transport operations in Latin America. My main mission is to work on the development of robust back-end services in the .NET ecosystem.',
+        job2_title: 'Mid-Level Developer',
+        job2_company: 'Nuria',
+        job2_period: 'Aug 2025 - Apr 2026',
+        job2_desc:
+            "Served as Core Developer for the 'Nuria Appointment' scheduling engine and architected the integration with 'Reserve with Google' (a pioneering healthcare implementation in Brazil). Prioritized high availability and sub-second latency while contributing to system scalability and maintainability improvements. Mentored the engineering team on C# best practices and code quality standards.",
+        job1_title: 'Junior Developer',
+        job1_company: 'Nuria',
+        job1_period: 'Sep 2023 - Jul 2025',
+        job1_desc:
+            'Developed key features for the healthcare ecosystem, directly impacting user experience. Played a core role in developing the online scheduling system, ensuring data integrity. Implemented comprehensive observability via Grafana/Elastic for proactive monitoring and optimized caching strategies (DynamoDB) to boost application throughput.',
+        job0_title: 'Development Intern',
+        job0_company: 'Nuria',
+        job0_period: 'Feb 2023 - Sep 2023',
+        job0_desc:
             'Built and maintained integration APIs connecting hospital ERPs with major supply chain providers. Focused on system reliability and debugging complex integration scenarios to ensure seamless data synchronization.',
 
         // Contact
@@ -140,21 +145,26 @@ export const translations = {
 
         // Experience
         experience: 'Experiência',
-        job1_title: 'Desenvolvedor Pleno',
-        job1_company: 'Nuria',
-        job1_period: 'Ago 2025 - Presente',
-        job1_desc:
-            "Desenvolvedor responsável pelo motor de agendamento 'Nuria Appointment' e Arquiteto da integração com o 'Reserve with Google' (uma das primeiras do setor de saúde no Brasil). Priorizando alta disponibilidade e latência mínima, enquanto contribuo para melhorias de escalabilidade e manutenibilidade do sistema. Mentorando o time de engenharia em boas práticas de C# e padrões de qualidade.",
-        job2_title: 'Desenvolvedor Júnior',
-        job2_company: 'Nuria',
-        job2_period: 'Set 2023 - Jul 2025',
-        job2_desc:
-            'Desenvolvedor de funcionalidades-chave para o ecossistema de saúde, impactando diretamente a experiência do usuário. Atuei no desenvolvimento central do sistema de agendamento online, assegurando integridade de dados. Implementei observabilidade abrangente via Grafana/Elastic para monitoramento proativo e estratégias de cache (DynamoDB) para maximizar o throughput da aplicação.',
-        job3_title: 'Estagiário de Desenvolvimento',
-        job3_company: 'Nuria',
-        job3_period: 'Fev 2023 - Set 2023',
+        job3_title: 'Software Engineer',
+        job3_company: 'Tryvia',
+        job3_period: 'Abr 2026 - Presente',
         job3_desc:
-            'Construiu e manteve APIs de integração conectando ERPs hospitalares a grandes provedores de cadeia de suprimentos. Focado na confiabilidade do sistema e na depuração de cenários complexos de integração para garantir sincronização de dados fluida.',
+            'Assumindo o desafio de construir e evoluir soluções de alta performance para a gestão estratégica de frotas e operações de transporte na América Latina. Minha missão principal é atuar no desenvolvimento de serviços back-end robustos no ecossistema .NET.',
+        job2_title: 'Desenvolvedor Pleno',
+        job2_company: 'Nuria',
+        job2_period: 'Ago 2025 - Abr 2026',
+        job2_desc:
+            "Atuei como Desenvolvedor Principal do motor de agendamento 'Nuria Appointment' e arquitetei a integração com o 'Reserve with Google' (uma das primeiras do setor de saúde no Brasil). Priorizei alta disponibilidade e latência mínima, enquanto contribuía para melhorias de escalabilidade e manutenibilidade do sistema. Também mentorei o time de engenharia em boas práticas de C# e padrões de qualidade.",
+        job1_title: 'Desenvolvedor Júnior',
+        job1_company: 'Nuria',
+        job1_period: 'Set 2023 - Jul 2025',
+        job1_desc:
+            'Desenvolvi funcionalidades-chave para o ecossistema de saúde, impactando diretamente a experiência do usuário. Atuei no desenvolvimento central do sistema de agendamento online, assegurando integridade de dados. Implementei observabilidade abrangente via Grafana/Elastic para monitoramento proativo e estratégias de cache (DynamoDB) para maximizar o throughput da aplicação.',
+        job0_title: 'Estagiário de Desenvolvimento',
+        job0_company: 'Nuria',
+        job0_period: 'Fev 2023 - Set 2023',
+        job0_desc:
+            'Construí e mantive APIs de integração conectando ERPs hospitalares a grandes provedores de cadeia de suprimentos. Foquei na confiabilidade do sistema e na depuração de cenários complexos de integração para garantir sincronização de dados fluida.',
 
         // Contact
         contact: 'Entre em Contato',
